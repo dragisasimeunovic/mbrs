@@ -1,0 +1,25 @@
+<form [formGroup]="cenovnikForm" (submit)="save()">
+
+
+  
+  
+  
+
+  
+  
+    <div class="form-group">
+      <mat-form-field>
+        <input
+                matInput
+                placeholder="naziv"
+                class="form-control"
+                formControlName="naziv" >
+      </mat-form-field>
+    </div>
+   
+  
+
+
+<button mat-button type="submit" [disabled]="!cenovnikForm.valid">Save</button>
+
+</form>

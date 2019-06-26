@@ -1,0 +1,39 @@
+<form [formGroup]="stavkaCenovnikaForm" (submit)="save()">
+
+
+  
+  
+  
+
+  
+  
+    <div class="form-group">
+      <mat-form-field>
+        <input
+                matInput
+                placeholder="naziv"
+                class="form-control"
+                formControlName="naziv" >
+      </mat-form-field>
+    </div>
+   
+  
+
+  
+  
+    <div class="form-group">
+      <mat-form-field>
+        <input
+                matInput
+                placeholder="cena"
+                class="form-control"
+                formControlName="cena" >
+      </mat-form-field>
+    </div>
+   
+  
+
+
+<button mat-button type="submit" [disabled]="!stavkaCenovnikaForm.valid">Save</button>
+
+</form>
